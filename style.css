@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
 body {
   background-color: #1226d3;
   color: #1226d3;
@@ -81,4 +85,31 @@ h1 {
 .box11 {
   grid-column: 3 / span 2;
   grid-row: 4;
+}
+/* Media */
+
+/* Smartphones: max-width 767px */
+@media (max-width: 767px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+  }
+
+  .box {
+    grid-column: auto !important;
+    grid-row: auto !important;
+  }
+}
+
+/* Tablets: 768px - 1024px */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .grid-container {
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 150px;
+  }
+
+  .box {
+    grid-column: auto !important;
+    grid-row: auto !important;
+  }
 }

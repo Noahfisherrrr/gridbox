@@ -28,7 +28,6 @@ h1 {
   padding: 10px;
 }
 
-/* Specific placements to match the desired layout */
 .box1 {
   grid-column: 1;
   grid-row: span 2;
